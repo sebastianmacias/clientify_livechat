@@ -65,7 +65,7 @@ jobs:
         env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}        
       - name: test-scripts (gsdev, go-starter only)
-        if: ${{ github.repository == 'allaboutapps/go-starter' }} 
+        if: ${{ github.repository == 'sebastianmacias/starter' }} 
         run: docker exec builder make test-scripts
       - name: info
         run: docker exec builder make info
