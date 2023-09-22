@@ -3,8 +3,7 @@
 **go-starter** is an opinionated *production-ready* RESTful JSON backend template written in [Go](https://golang.org/), highly integrated with [VSCode DevContainers](https://code.visualstudio.com/docs/remote/containers) by [allaboutapps](https://allaboutapps.at/).
 
 [![Build and Test](https://github.com/sebastianmacias/starter/actions/workflows/build-test.yml/badge.svg)](https://github.com/sebastianmacias/starter/actions)
-[![codecov](https://codecov.io/gh/allaboutapps/go-starter/branch/master/graph/badge.svg?token=220E44857K)](https://codecov.io/gh/allaboutapps/go-starter)
-[![codecov](https://codecov.io/gh/sebastianmacias/starter/branch/main/graph/badge.svg?token=220E44857K)](https://codecov.io/gh/sebastianmacias/starter)
+[![codecov](https://codecov.io/gh/sebastianmacias/starter/graph/badge.svg?token=DW1UXV07IS)](https://codecov.io/gh/sebastianmacias/starter)
 [![Go Report Card](https://goreportcard.com/badge/github.com/allaboutapps/go-starter)](https://goreportcard.com/report/github.com/allaboutapps/go-starter)
 [![Swagger Validator](https://img.shields.io/swagger/valid/3.0?specUrl=https%3A%2F%2Fraw.githubusercontent.com%2Fallaboutapps%2Fgo-starter%2Fmaster%2Fapi%2Fswagger.yml)](https://go-starter.allaboutapps.at/documentation/)
 ![GitHub contributors](https://img.shields.io/github/contributors/allaboutapps/go-starter)

@@ -3,10 +3,10 @@ package push
 import (
 	"net/http"
 
-	"allaboutapps.dev/aw/go-starter/internal/api"
-	"allaboutapps.dev/aw/go-starter/internal/api/auth"
-	"allaboutapps.dev/aw/go-starter/internal/util"
 	"github.com/labstack/echo/v4"
+	"github.com/sebastianmacias/starter/internal/api"
+	"github.com/sebastianmacias/starter/internal/api/auth"
+	"github.com/sebastianmacias/starter/internal/util"
 )
 
 func GetPushTestRoute(s *api.Server) *echo.Route {

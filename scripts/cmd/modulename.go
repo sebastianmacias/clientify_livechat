@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"log"
 
-	"allaboutapps.dev/aw/go-starter/scripts/internal/util"
+	"github.com/sebastianmacias/starter/scripts/internal/util"
 	"github.com/spf13/cobra"
 )
 

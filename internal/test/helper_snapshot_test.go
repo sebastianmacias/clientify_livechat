@@ -6,10 +6,10 @@ import (
 	"regexp"
 	"testing"
 
-	"allaboutapps.dev/aw/go-starter/internal/test"
-	"allaboutapps.dev/aw/go-starter/internal/test/mocks"
-	"allaboutapps.dev/aw/go-starter/internal/util"
 	"github.com/go-openapi/swag"
+	"github.com/sebastianmacias/starter/internal/test"
+	"github.com/sebastianmacias/starter/internal/test/mocks"
+	"github.com/sebastianmacias/starter/internal/util"
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"
 )

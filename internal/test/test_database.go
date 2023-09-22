@@ -12,13 +12,13 @@ import (
 	"sync"
 	"testing"
 
-	"allaboutapps.dev/aw/go-starter/internal/config"
-	pUtil "allaboutapps.dev/aw/go-starter/internal/util"
-	dbutil "allaboutapps.dev/aw/go-starter/internal/util/db"
 	"github.com/allaboutapps/integresql-client-go"
 	"github.com/allaboutapps/integresql-client-go/pkg/util"
 	"github.com/pkg/errors"
 	migrate "github.com/rubenv/sql-migrate"
+	"github.com/sebastianmacias/starter/internal/config"
+	pUtil "github.com/sebastianmacias/starter/internal/util"
+	dbutil "github.com/sebastianmacias/starter/internal/util/db"
 	"github.com/volatiletech/sqlboiler/v4/boil"
 )
 

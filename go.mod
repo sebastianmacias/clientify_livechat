@@ -1,4 +1,4 @@
-module allaboutapps.dev/aw/go-starter
+module github.com/sebastianmacias/starter
 
 go 1.20
 

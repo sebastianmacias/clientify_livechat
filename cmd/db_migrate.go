@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"os"
 
-	"allaboutapps.dev/aw/go-starter/internal/config"
 	migrate "github.com/rubenv/sql-migrate"
+	"github.com/sebastianmacias/starter/internal/config"
 	"github.com/spf13/cobra"
 )
 

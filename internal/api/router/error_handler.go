@@ -6,11 +6,11 @@ import (
 	"fmt"
 	"net/http"
 
-	"allaboutapps.dev/aw/go-starter/internal/api/httperrors"
-	"allaboutapps.dev/aw/go-starter/internal/types"
-	"allaboutapps.dev/aw/go-starter/internal/util"
 	"github.com/go-openapi/swag"
 	"github.com/labstack/echo/v4"
+	"github.com/sebastianmacias/starter/internal/api/httperrors"
+	"github.com/sebastianmacias/starter/internal/types"
+	"github.com/sebastianmacias/starter/internal/util"
 )
 
 var (

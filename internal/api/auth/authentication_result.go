@@ -3,7 +3,7 @@ package auth
 import (
 	"time"
 
-	"allaboutapps.dev/aw/go-starter/internal/models"
+	"github.com/sebastianmacias/starter/internal/models"
 )
 
 type AuthenticationResult struct {

@@ -10,11 +10,11 @@ import (
 	"syscall"
 	"time"
 
-	"allaboutapps.dev/aw/go-starter/internal/api"
-	"allaboutapps.dev/aw/go-starter/internal/api/router"
-	"allaboutapps.dev/aw/go-starter/internal/config"
 	"github.com/rs/zerolog"
 	"github.com/rs/zerolog/log"
+	"github.com/sebastianmacias/starter/internal/api"
+	"github.com/sebastianmacias/starter/internal/api/router"
+	"github.com/sebastianmacias/starter/internal/config"
 	"github.com/spf13/cobra"
 )
 

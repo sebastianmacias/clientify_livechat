@@ -3,9 +3,9 @@ package router_test
 import (
 	"testing"
 
-	"allaboutapps.dev/aw/go-starter/internal/api"
-	"allaboutapps.dev/aw/go-starter/internal/config"
-	"allaboutapps.dev/aw/go-starter/internal/test"
+	"github.com/sebastianmacias/starter/internal/api"
+	"github.com/sebastianmacias/starter/internal/config"
+	"github.com/sebastianmacias/starter/internal/test"
 	"github.com/stretchr/testify/require"
 )
 

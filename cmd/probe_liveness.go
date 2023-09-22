@@ -5,9 +5,9 @@ import (
 	"database/sql"
 	"fmt"
 
-	"allaboutapps.dev/aw/go-starter/internal/api/handlers/common"
-	"allaboutapps.dev/aw/go-starter/internal/config"
 	"github.com/rs/zerolog/log"
+	"github.com/sebastianmacias/starter/internal/api/handlers/common"
+	"github.com/sebastianmacias/starter/internal/config"
 	"github.com/spf13/cobra"
 )
 

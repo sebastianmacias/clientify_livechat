@@ -6,10 +6,10 @@ import (
 	"runtime"
 	"time"
 
-	"allaboutapps.dev/aw/go-starter/internal/mailer/transport"
-	"allaboutapps.dev/aw/go-starter/internal/push/provider"
-	"allaboutapps.dev/aw/go-starter/internal/util"
 	"github.com/rs/zerolog"
+	"github.com/sebastianmacias/starter/internal/mailer/transport"
+	"github.com/sebastianmacias/starter/internal/push/provider"
+	"github.com/sebastianmacias/starter/internal/util"
 	"golang.org/x/text/language"
 )
 

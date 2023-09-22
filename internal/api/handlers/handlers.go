@@ -2,11 +2,11 @@
 package handlers
 
 import (
-	"allaboutapps.dev/aw/go-starter/internal/api"
-	"allaboutapps.dev/aw/go-starter/internal/api/handlers/auth"
-	"allaboutapps.dev/aw/go-starter/internal/api/handlers/common"
-	"allaboutapps.dev/aw/go-starter/internal/api/handlers/push"
 	"github.com/labstack/echo/v4"
+	"github.com/sebastianmacias/starter/internal/api"
+	"github.com/sebastianmacias/starter/internal/api/handlers/auth"
+	"github.com/sebastianmacias/starter/internal/api/handlers/common"
+	"github.com/sebastianmacias/starter/internal/api/handlers/push"
 )
 
 func AttachAllRoutes(s *api.Server) {

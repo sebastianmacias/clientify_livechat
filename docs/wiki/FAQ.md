@@ -494,7 +494,7 @@ note: use 'make help-all' to see all make targets.
 all                    Runs all of our common make targets: clean, init, build and test.
 build                  Default 'make' target: sql, swagger, go-generate, go-format, go-build and lint.
 clean                  Cleans ./tmp and ./api/tmp folder.
-force-module-name      Overwrite occurrences of 'allaboutapps.dev/aw/go-starter' with current go module-name.
+force-module-name      Overwrite occurrences of 'github.com/sebastianmacias/starter' with current go module-name.
 get-embedded-modules   Prints embedded modules in the compiled bin/app.
 get-licenses           Prints licenses of embedded modules in the compiled bin/app.
 get-module-name        Prints current go module-name (pipeable).
@@ -621,7 +621,7 @@ We provide an additional helper for go-starter merges, that you typically want t
 ```bash
 development@94242c61cf2b:/app$ # inside your development container...
 
-# Overwrite occurences of 'allaboutapps.dev/aw/go-starter' with your current go module-name
+# Overwrite occurences of 'github.com/sebastianmacias/starter' with your current go module-name
 make force-module-name
 ```
 

@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	"allaboutapps.dev/aw/go-starter/internal/util"
+	"github.com/sebastianmacias/starter/internal/util"
 	"github.com/volatiletech/sqlboiler/v4/boil"
 )
 

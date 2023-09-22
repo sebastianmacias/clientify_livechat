@@ -4,15 +4,15 @@ import (
 	"database/sql"
 	"net/http"
 
-	"allaboutapps.dev/aw/go-starter/internal/api"
-	"allaboutapps.dev/aw/go-starter/internal/api/auth"
-	"allaboutapps.dev/aw/go-starter/internal/api/httperrors"
-	"allaboutapps.dev/aw/go-starter/internal/models"
-	"allaboutapps.dev/aw/go-starter/internal/types"
-	"allaboutapps.dev/aw/go-starter/internal/util"
 	"github.com/labstack/echo/v4"
 	"github.com/lib/pq"
 	"github.com/pkg/errors"
+	"github.com/sebastianmacias/starter/internal/api"
+	"github.com/sebastianmacias/starter/internal/api/auth"
+	"github.com/sebastianmacias/starter/internal/api/httperrors"
+	"github.com/sebastianmacias/starter/internal/models"
+	"github.com/sebastianmacias/starter/internal/types"
+	"github.com/sebastianmacias/starter/internal/util"
 	"github.com/volatiletech/sqlboiler/v4/boil"
 )
 

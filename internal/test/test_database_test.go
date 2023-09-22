@@ -9,9 +9,9 @@ import (
 	"sync"
 	"testing"
 
-	"allaboutapps.dev/aw/go-starter/internal/config"
-	"allaboutapps.dev/aw/go-starter/internal/test"
-	pUtil "allaboutapps.dev/aw/go-starter/internal/util"
+	"github.com/sebastianmacias/starter/internal/config"
+	"github.com/sebastianmacias/starter/internal/test"
+	pUtil "github.com/sebastianmacias/starter/internal/util"
 	"github.com/stretchr/testify/require"
 )
 
