@@ -58,8 +58,12 @@ jobs:
           docker cp builder:/app ./post-build && rm -rf ./post-build/.git && git -C post-build diff --exit-code
       - name: test
         run: docker exec builder make test
-      - name: upload coverage to codecov
-        run: docker cp builder:/tmp/coverage.out ./coverage.out && bash <(curl -s https://codecov.io/bash)
+      # - name: upload coverage to codecov
+      #   run: docker cp builder:/tmp/coverage.out ./coverage.out && bash <(curl -s https://codecov.io/bash)
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v3
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}      
       - name: test-scripts (gsdev, go-starter only)
         if: ${{ github.repository == 'allaboutapps/go-starter' }} 
         run: docker exec builder make test-scripts
