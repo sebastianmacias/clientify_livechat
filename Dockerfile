@@ -139,7 +139,7 @@ RUN mkdir -p /tmp/yq \
     && rm -rf /tmp/yq
 
 # update postgresql client pg_dump
-# RUN apt-get update && apt-get install -y --no-install-recommends postgresql-client-15
+RUN apt-get update && apt-get install -y --no-install-recommends postgresql-client-15
 
 # gsdev
 # The sole purpose of the "gsdev" cli util is to provide a handy short command for the following (all args are passed):

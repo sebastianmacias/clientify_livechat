@@ -638,7 +638,7 @@ We **will update** the used version of PostgreSQL in go-starter (minor and major
 The easiest way to do so, is to explicitly check for changes within the `docker-compose.yml` file:
 ```yaml
 postgres:
-  image: postgres:12.4-alpine # should be the same version as used in .drone.yml, .github/workflows, Dockerfile and live
+  image: postgres:15.4-alpine3.18 # should be the same version as used in .drone.yml, .github/workflows, Dockerfile and live
 ```
 
 ## I just want to update / upgrade my project!
@@ -1294,7 +1294,7 @@ services:
       PGSSLMODE: &PGSSLMODE "disable"
 
   postgres-prod:
-    image: postgres:12.4-alpine # should be the same version as used in .drone.yml, .github/workflows, Dockerfile and live
+    image: postgres:15.4-alpine3.18 # should be the same version as used in .drone.yml, .github/workflows, Dockerfile and live
     expose:
       - "5432"
     ports:
