@@ -4,7 +4,7 @@
 # --- https://hub.docker.com/_/golang
 # --- https://github.com/microsoft/vscode-remote-try-go/blob/master/.devcontainer/Dockerfile
 ### -----------------------
-FROM golang:1.20.3-bullseye AS development
+FROM golang:1.21.1-bullseye AS development
 
 # Avoid warnings by switching to noninteractive
 ENV DEBIAN_FRONTEND=noninteractive
@@ -137,6 +137,9 @@ RUN mkdir -p /tmp/yq \
     && tar xzf "yq_linux_${ARCH}.tar.gz" \
     && cp "yq_linux_${ARCH}" /usr/local/bin/yq \
     && rm -rf /tmp/yq
+
+# update postgresql client pg_dump
+# RUN apt-get update && apt-get install -y --no-install-recommends postgresql-client-15
 
 # gsdev
 # The sole purpose of the "gsdev" cli util is to provide a handy short command for the following (all args are passed):
