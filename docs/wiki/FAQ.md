@@ -653,7 +653,7 @@ We recommend to upgrade in small steps, merging the next available go-starter gi
 
 ```bash
 # merge with the go-starter git tag `go-starter-YYYY-MM-DD`
-GIT_GO_STARTER_TARGET=go-starter-YYYY-MM-DD make git-merge-go-starter
+GIT_STARTER_TARGET=go-starter-YYYY-MM-DD make git-merge-go-starter
 ```
 
 ### Option b: Upgrade to the current go-starter `master`
@@ -671,10 +671,10 @@ If you want to merge a specific (pre-release) go-starter branch or commit into y
 
 ```bash
 # merge with a specific branch (heads up! it's `go-starter/<branchname>`, e.g. `go-starter/mr/housekeeping`):
-GIT_GO_STARTER_TARGET=go-starter/mr/housekeeping make git-merge-go-starter
+GIT_STARTER_TARGET=go-starter/mr/housekeeping make git-merge-go-starter
 
 # merge with a specific go-starter commit (e.g. `e85bedb94c3562602bc23d2bfd09fca3b13d1e02`)
-GIT_GO_STARTER_TARGET=e85bedb94c3562602bc23d2bfd09fca3b13d1e02 make git-merge-go-starter
+GIT_STARTER_TARGET=e85bedb94c3562602bc23d2bfd09fca3b13d1e02 make git-merge-go-starter
 ```
 
 ### Post merge
