@@ -390,8 +390,8 @@ set-module-name: ##- Wizard to set a new go module-name.
 		&& echo "new go module-name: '$${new_module_name}'!"
 	@rm -f tmp/.modulename
 
-force-module-name: ##- Overwrite occurrences of 'allaboutapps.dev/aw/go-starter' with current go module-name.
-	find . -not -path '*/\.*' -not -path './Makefile' -type f -exec sed -i "s|allaboutapps.dev/aw/go-starter|${GO_MODULE_NAME}|g" {} \;
+force-module-name: ##- Overwrite occurrences of 'github.com/sebastianmacias/starter' with current go module-name.
+	find . -not -path '*/\.*' -not -path './Makefile' -type f -exec sed -i "s|github.com/sebastianmacias/starter|${GO_MODULE_NAME}|g" {} \;
 
 get-go-ldflags: ##- (opt) Prints used -ldflags as evaluated in Makefile used in make go-build
 	@echo $(LDFLAGS)
