@@ -82,7 +82,9 @@ services:
         chmod +x /app/rksh
         git config --global --add safe.directory /app
         while sleep 1000; do :; done
-
+    networks: 
+      - multitenancy-network    
+      
   postgres:
     image: postgres:15.4-alpine3.18 # should be the same version as used in .drone.yml, .github/workflows, Dockerfile and live
     # ATTENTION
@@ -104,6 +106,8 @@ services:
       POSTGRES_PASSWORD: *PGPASSWORD
     volumes:
       - pgvolume:/var/lib/postgresql/data
+    networks: 
+      - multitenancy-network          
 
   integresql:
     image: allaboutapps/integresql:1.0.0
@@ -115,6 +119,8 @@ services:
       PGHOST: *PGHOST
       PGUSER: *PGUSER
       PGPASSWORD: *PGPASSWORD
+    networks: 
+      - multitenancy-network          
 
   mailhog:
     image: mailhog/mailhog
@@ -122,6 +128,8 @@ services:
       - "1025"
     ports:
       - "8025:8025"
+    networks: 
+      - multitenancy-network          
 
   swaggerui:
     image: swaggerapi/swagger-ui:v3.46.0
@@ -132,6 +140,8 @@ services:
       - ./api:/api:ro,consistent
       # mount overwritten translator.js (intercept requests port 8081 to our local service on port 8080)
       - ./api/config/swagger-ui-local-translator.js:/usr/share/nginx/configurator/translator.js:ro,delegated
+    networks: 
+      - multitenancy-network    
 
   swaggerui-browser-sync:
     image: allaboutapps/browser-sync:v2.26.14
@@ -140,7 +150,9 @@ services:
       - ./api:/api:ro,consistent
     ports:
       - "8081:8081"
-
+    networks: 
+      - multitenancy-network 
+         
 volumes:
   # postgresql: declare a named volume to persist DB data
   pgvolume:
@@ -157,3 +169,7 @@ volumes:
   # https://code.visualstudio.com/docs/remote/containers-advanced#_avoiding-extension-reinstalls-on-container-rebuild
   vscode-extensions:
   vscode-extensions-insiders:
+
+networks:
+  multitenancy-network:
+    external: true
