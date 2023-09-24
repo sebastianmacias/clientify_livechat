@@ -12,9 +12,9 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/sebastianmacias/starter/internal/util"
 	"github.com/go-openapi/swag"
-	"github.com/rogpeppe/go-internal/modfile"
+	"github.com/sebastianmacias/starter/internal/util"
+	"golang.org/x/mod/modfile"
 )
 
 // Scaffolding tool to auto-generate basic CRUD handlers for a given database model.
