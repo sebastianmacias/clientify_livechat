@@ -31,6 +31,10 @@ definitions:
         description: "Type of error returned, should be used for client-side error handling"
         type: string
         example: generic
+      x_ref:
+        description: "Error identifier"
+        type: string
+        example: MOD_117
   PublicHTTPValidationError:
     allOf:
       - $ref: "#/definitions/PublicHTTPError"

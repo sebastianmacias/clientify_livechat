@@ -1,0 +1,37 @@
+swagger: "2.0"
+info:
+  title: github.com/futurescopex/starter
+  version: 0.1.0
+paths: {}
+definitions:
+  PublicHTTPSuccess:
+    type: object
+    required:
+      - status
+      - type
+      - title
+    properties:
+      detail:
+        description: "More detailed, human-readable, optional explanation of the success"
+        type: string
+        example: The operation was successfully completed.
+      status:
+        description: HTTP status code returned for the success
+        type: integer
+        format: int64
+        maximum: 599
+        minimum: 100
+        x-go-name: Code
+        example: 200
+      title:
+        description: "Short, human-readable description of the success"
+        type: string
+        example: Forbidden
+      type:
+        description: "Type of success returned, should be used for client-side success handling"
+        type: string
+        example: generic
+      x_ref:
+        description: "Success identifier"
+        type: string
+        example: MOD_17

@@ -39,6 +39,10 @@ type PublicHTTPError struct {
 	// Example: generic
 	// Required: true
 	Type *string `json:"type"`
+
+	// Error identifier
+	// Example: MOD_117
+	XRef string `json:"x_ref,omitempty"`
 }
 
 // Validate validates this public Http error

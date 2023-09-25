@@ -308,6 +308,23 @@ watch-swagger: ##- Watches *.yml|yaml|gotmpl files in /api and runs 'make swagge
 	@echo "Watching /api/**/*.yml|yaml|gotmpl. Use Ctrl-c to stop a run or exit."
 	watchexec -p -w api -i tmp -i api/swagger.yml --exts yml,yaml,gotmpl $(MAKE) swagger
 
+dev: ##- Watches *.go files and reloads dev server
+	@echo "Watching *.go. Use Ctrl-c to stop a run or exit."
+	watchexec -r -e go -- go run main.go server
+
+dev-reset: ##- Resets database, generates SQLBoiler models  and swagger and handlers code
+	@echo "make dev-reset"
+	@$(MAKE) sql-drop-all
+	@$(MAKE) sql-reset	
+	@$(MAKE) sql-spec-reset
+	@$(MAKE) sql-spec-migrate
+	@$(MAKE) sql-regenerate
+	@go run main.go probe readiness -v 
+	@go run main.go db migrate
+	@go run main.go db seed
+	@$(MAKE) swagger
+	@$(MAKE) go-generate
+
 ### -----------------------
 # --- Binary checks
 ### -----------------------
