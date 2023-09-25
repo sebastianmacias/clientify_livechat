@@ -7,9 +7,11 @@ import (
 	"time"
 
 	"github.com/rs/zerolog"
+
 	"github.com/sebastianmacias/starter/internal/mailer/transport"
 	"github.com/sebastianmacias/starter/internal/push/provider"
 	"github.com/sebastianmacias/starter/internal/util"
+
 	"golang.org/x/text/language"
 )
 
@@ -93,6 +95,7 @@ type I18n struct {
 
 type Server struct {
 	Database   Database
+	Workflow   Workflow
 	Echo       EchoServer
 	Pprof      PprofServer
 	Paths      PathsServer
@@ -140,6 +143,10 @@ func DefaultServiceConfigFromEnv() Server {
 			MaxOpenConns:    util.GetEnvAsInt("DB_MAX_OPEN_CONNS", runtime.NumCPU()*2),
 			MaxIdleConns:    util.GetEnvAsInt("DB_MAX_IDLE_CONNS", 1),
 			ConnMaxLifetime: time.Second * time.Duration(util.GetEnvAsInt("DB_CONN_MAX_LIFETIME_SEC", 60)),
+		},
+		Workflow: Workflow{
+			Host: util.GetEnv("TEMPORAL_HOST", "temporal"),
+			Port: util.GetEnvAsInt("TEMPORAL_PORT", 7233),
 		},
 		Echo: EchoServer{
 			Debug:                          util.GetEnvAsBool("SERVER_ECHO_DEBUG", false),
