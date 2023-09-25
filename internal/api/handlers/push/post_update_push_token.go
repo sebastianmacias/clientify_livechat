@@ -4,15 +4,15 @@ import (
 	"database/sql"
 	"net/http"
 
-	"github.com/labstack/echo/v4"
-	"github.com/lib/pq"
-	"github.com/pkg/errors"
 	"github.com/futurescopex/starter/internal/api"
 	"github.com/futurescopex/starter/internal/api/auth"
 	"github.com/futurescopex/starter/internal/api/httperrors"
 	"github.com/futurescopex/starter/internal/models"
 	"github.com/futurescopex/starter/internal/types"
 	"github.com/futurescopex/starter/internal/util"
+	"github.com/labstack/echo/v4"
+	"github.com/lib/pq"
+	"github.com/pkg/errors"
 	"github.com/volatiletech/sqlboiler/v4/boil"
 )
 

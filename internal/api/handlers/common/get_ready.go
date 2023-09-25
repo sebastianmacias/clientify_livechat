@@ -4,8 +4,8 @@ import (
 	"context"
 	"net/http"
 
-	"github.com/labstack/echo/v4"
 	"github.com/futurescopex/starter/internal/api"
+	"github.com/labstack/echo/v4"
 )
 
 func GetReadyRoute(s *api.Server) *echo.Route {

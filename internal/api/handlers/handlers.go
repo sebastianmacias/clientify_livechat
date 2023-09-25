@@ -2,11 +2,11 @@
 package handlers
 
 import (
-	"github.com/labstack/echo/v4"
 	"github.com/futurescopex/starter/internal/api"
 	"github.com/futurescopex/starter/internal/api/handlers/auth"
 	"github.com/futurescopex/starter/internal/api/handlers/common"
 	"github.com/futurescopex/starter/internal/api/handlers/push"
+	"github.com/labstack/echo/v4"
 )
 
 func AttachAllRoutes(s *api.Server) {

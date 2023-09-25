@@ -6,11 +6,11 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/go-openapi/swag"
-	"github.com/labstack/echo/v4"
 	"github.com/futurescopex/starter/internal/api/httperrors"
 	"github.com/futurescopex/starter/internal/types"
 	"github.com/futurescopex/starter/internal/util"
+	"github.com/go-openapi/swag"
+	"github.com/labstack/echo/v4"
 )
 
 var (

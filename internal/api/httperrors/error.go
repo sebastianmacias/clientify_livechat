@@ -5,8 +5,8 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/go-openapi/swag"
 	"github.com/futurescopex/starter/internal/types"
+	"github.com/go-openapi/swag"
 )
 
 const (

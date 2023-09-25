@@ -6,14 +6,14 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/go-openapi/strfmt"
-	"github.com/go-openapi/swag"
-	"github.com/labstack/echo/v4"
 	"github.com/futurescopex/starter/internal/api"
 	"github.com/futurescopex/starter/internal/config"
 	"github.com/futurescopex/starter/internal/test"
 	"github.com/futurescopex/starter/internal/util"
 	pUtil "github.com/futurescopex/starter/internal/util"
+	"github.com/go-openapi/strfmt"
+	"github.com/go-openapi/swag"
+	"github.com/labstack/echo/v4"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

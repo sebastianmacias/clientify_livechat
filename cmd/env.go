@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/rs/zerolog/log"
 	"github.com/futurescopex/starter/internal/config"
+	"github.com/rs/zerolog/log"
 	"github.com/spf13/cobra"
 )
 

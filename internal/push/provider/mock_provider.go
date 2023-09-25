@@ -3,8 +3,8 @@ package provider
 import (
 	"errors"
 
-	"github.com/rs/zerolog/log"
 	"github.com/futurescopex/starter/internal/push"
+	"github.com/rs/zerolog/log"
 )
 
 type Mock struct {

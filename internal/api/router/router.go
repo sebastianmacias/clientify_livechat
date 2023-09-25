@@ -5,12 +5,12 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/labstack/echo/v4"
-	echoMiddleware "github.com/labstack/echo/v4/middleware"
-	"github.com/rs/zerolog/log"
 	"github.com/futurescopex/starter/internal/api"
 	"github.com/futurescopex/starter/internal/api/handlers"
 	"github.com/futurescopex/starter/internal/api/middleware"
+	"github.com/labstack/echo/v4"
+	echoMiddleware "github.com/labstack/echo/v4/middleware"
+	"github.com/rs/zerolog/log"
 
 	// #nosec G108 - pprof handlers (conditionally made available via http.DefaultServeMux)
 	"net/http/pprof"

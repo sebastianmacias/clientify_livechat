@@ -8,10 +8,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/go-openapi/strfmt"
-	"github.com/go-openapi/strfmt/conv"
 	"github.com/futurescopex/starter/internal/test"
 	"github.com/futurescopex/starter/internal/util"
+	"github.com/go-openapi/strfmt"
+	"github.com/go-openapi/strfmt/conv"
 	"github.com/stretchr/testify/require"
 )
 

@@ -5,9 +5,9 @@ import (
 	"database/sql"
 	"fmt"
 
-	"github.com/rs/zerolog/log"
 	"github.com/futurescopex/starter/internal/api/handlers/common"
 	"github.com/futurescopex/starter/internal/config"
+	"github.com/rs/zerolog/log"
 	"github.com/spf13/cobra"
 )
 

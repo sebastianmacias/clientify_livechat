@@ -3,8 +3,8 @@ package util_test
 import (
 	"testing"
 
-	"github.com/rs/zerolog"
 	"github.com/futurescopex/starter/internal/util"
+	"github.com/rs/zerolog"
 	"github.com/stretchr/testify/assert"
 )
 

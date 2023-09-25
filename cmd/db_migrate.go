@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"os"
 
-	migrate "github.com/rubenv/sql-migrate"
 	"github.com/futurescopex/starter/internal/config"
+	migrate "github.com/rubenv/sql-migrate"
 	"github.com/spf13/cobra"
 )
 
