@@ -6,12 +6,12 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/sebastianmacias/starter/internal/api"
-	"github.com/sebastianmacias/starter/internal/api/handlers/auth"
-	"github.com/sebastianmacias/starter/internal/api/httperrors"
-	"github.com/sebastianmacias/starter/internal/api/middleware"
-	"github.com/sebastianmacias/starter/internal/test"
-	"github.com/sebastianmacias/starter/internal/types"
+	"github.com/futurescopex/starter/internal/api"
+	"github.com/futurescopex/starter/internal/api/handlers/auth"
+	"github.com/futurescopex/starter/internal/api/httperrors"
+	"github.com/futurescopex/starter/internal/api/middleware"
+	"github.com/futurescopex/starter/internal/test"
+	"github.com/futurescopex/starter/internal/types"
 	"github.com/stretchr/testify/assert"
 )
 

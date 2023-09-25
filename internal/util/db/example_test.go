@@ -3,8 +3,8 @@ package db_test
 import (
 	"fmt"
 
-	"github.com/sebastianmacias/starter/internal/models"
-	"github.com/sebastianmacias/starter/internal/util/db"
+	"github.com/futurescopex/starter/internal/models"
+	"github.com/futurescopex/starter/internal/util/db"
 	"github.com/volatiletech/sqlboiler/v4/queries"
 	"github.com/volatiletech/sqlboiler/v4/queries/qm"
 )

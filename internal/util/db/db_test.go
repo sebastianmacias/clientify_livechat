@@ -5,9 +5,9 @@ import (
 	"database/sql"
 	"testing"
 
-	"github.com/sebastianmacias/starter/internal/models"
-	"github.com/sebastianmacias/starter/internal/test"
-	"github.com/sebastianmacias/starter/internal/util/db"
+	"github.com/futurescopex/starter/internal/models"
+	"github.com/futurescopex/starter/internal/test"
+	"github.com/futurescopex/starter/internal/util/db"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"github.com/volatiletech/null/v8"

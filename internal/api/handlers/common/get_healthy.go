@@ -7,7 +7,7 @@ import (
 	"strings"
 
 	"github.com/labstack/echo/v4"
-	"github.com/sebastianmacias/starter/internal/api"
+	"github.com/futurescopex/starter/internal/api"
 )
 
 func GetHealthyRoute(s *api.Server) *echo.Route {

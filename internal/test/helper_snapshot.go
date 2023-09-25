@@ -10,7 +10,7 @@ import (
 
 	"github.com/davecgh/go-spew/spew"
 	"github.com/pmezard/go-difflib/difflib"
-	"github.com/sebastianmacias/starter/internal/util"
+	"github.com/futurescopex/starter/internal/util"
 )
 
 var (

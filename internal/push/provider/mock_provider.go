@@ -4,7 +4,7 @@ import (
 	"errors"
 
 	"github.com/rs/zerolog/log"
-	"github.com/sebastianmacias/starter/internal/push"
+	"github.com/futurescopex/starter/internal/push"
 )
 
 type Mock struct {

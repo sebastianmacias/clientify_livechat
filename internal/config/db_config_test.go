@@ -3,7 +3,7 @@ package config_test
 import (
 	"testing"
 
-	"github.com/sebastianmacias/starter/internal/config"
+	"github.com/futurescopex/starter/internal/config"
 )
 
 // via https://github.com/allaboutapps/integresql/blob/master/pkg/manager/database_config_test.go

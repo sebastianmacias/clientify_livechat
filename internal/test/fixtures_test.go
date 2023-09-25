@@ -6,8 +6,8 @@ import (
 	"testing"
 
 	_ "github.com/lib/pq"
-	"github.com/sebastianmacias/starter/internal/models"
-	"github.com/sebastianmacias/starter/internal/test"
+	"github.com/futurescopex/starter/internal/models"
+	"github.com/futurescopex/starter/internal/test"
 	"github.com/volatiletech/null/v8"
 	"github.com/volatiletech/sqlboiler/v4/boil"
 )

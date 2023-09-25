@@ -3,7 +3,7 @@ package auth
 import (
 	"time"
 
-	"github.com/sebastianmacias/starter/internal/models"
+	"github.com/futurescopex/starter/internal/models"
 )
 
 type AuthenticationResult struct {

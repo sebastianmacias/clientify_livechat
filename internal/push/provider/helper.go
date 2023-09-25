@@ -1,6 +1,6 @@
 package provider
 
-import "github.com/sebastianmacias/starter/internal/push"
+import "github.com/futurescopex/starter/internal/push"
 
 func sendMulticastWithProvider(p push.Provider, tokens []string, title, message string) []push.ProviderSendResponse {
 	responseSlice := make([]push.ProviderSendResponse, 0)

@@ -9,9 +9,9 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/sebastianmacias/starter/internal/config"
-	"github.com/sebastianmacias/starter/internal/test"
-	pUtil "github.com/sebastianmacias/starter/internal/util"
+	"github.com/futurescopex/starter/internal/config"
+	"github.com/futurescopex/starter/internal/test"
+	pUtil "github.com/futurescopex/starter/internal/util"
 	"github.com/stretchr/testify/require"
 )
 

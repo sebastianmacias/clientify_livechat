@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/sebastianmacias/starter/internal/util"
+	"github.com/futurescopex/starter/internal/util"
 )
 
 // The DatabaseMigrationTable name is baked into the binary

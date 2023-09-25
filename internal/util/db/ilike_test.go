@@ -3,9 +3,9 @@ package db_test
 import (
 	"testing"
 
-	"github.com/sebastianmacias/starter/internal/models"
-	"github.com/sebastianmacias/starter/internal/test"
-	"github.com/sebastianmacias/starter/internal/util/db"
+	"github.com/futurescopex/starter/internal/models"
+	"github.com/futurescopex/starter/internal/test"
+	"github.com/futurescopex/starter/internal/util/db"
 	"github.com/volatiletech/sqlboiler/v4/queries"
 	"github.com/volatiletech/sqlboiler/v4/queries/qm"
 )

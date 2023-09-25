@@ -14,10 +14,10 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/sebastianmacias/starter/internal/api"
-	"github.com/sebastianmacias/starter/internal/api/router"
-	"github.com/sebastianmacias/starter/internal/config"
-	"github.com/sebastianmacias/starter/internal/types"
+	"github.com/futurescopex/starter/internal/api"
+	"github.com/futurescopex/starter/internal/api/router"
+	"github.com/futurescopex/starter/internal/config"
+	"github.com/futurescopex/starter/internal/types"
 	"github.com/rs/zerolog"
 )
 

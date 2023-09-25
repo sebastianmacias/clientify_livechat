@@ -7,7 +7,7 @@ import (
 	"os"
 
 	migrate "github.com/rubenv/sql-migrate"
-	"github.com/sebastianmacias/starter/internal/config"
+	"github.com/futurescopex/starter/internal/config"
 	"github.com/spf13/cobra"
 )
 

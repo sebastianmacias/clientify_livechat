@@ -2,7 +2,7 @@
 
 package main
 
-import "github.com/sebastianmacias/starter/scripts/cmd"
+import "github.com/futurescopex/starter/scripts/cmd"
 
 func main() {
 	cmd.Execute()

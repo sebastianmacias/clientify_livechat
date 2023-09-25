@@ -5,8 +5,8 @@ import (
 	"database/sql"
 	"errors"
 
-	"github.com/sebastianmacias/starter/internal/models"
-	"github.com/sebastianmacias/starter/internal/util"
+	"github.com/futurescopex/starter/internal/models"
+	"github.com/futurescopex/starter/internal/util"
 )
 
 type ProviderType string

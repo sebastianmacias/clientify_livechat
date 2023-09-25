@@ -36,20 +36,20 @@ jobs:
     steps:
       - uses: actions/checkout@v4.1.0
       - name: docker build (target builder)
-        run: DOCKER_BUILDKIT=1 docker build --target builder --file Dockerfile --tag github.com/sebastianmacias/starter:builder-${GITHUB_SHA} .
+        run: DOCKER_BUILDKIT=1 docker build --target builder --file Dockerfile --tag github.com/futurescopex/starter:builder-${GITHUB_SHA} .
       - name: docker build (target app)
-        run: DOCKER_BUILDKIT=1 docker build --target app --file Dockerfile --tag github.com/sebastianmacias/starter:app-${GITHUB_SHA} .
+        run: DOCKER_BUILDKIT=1 docker build --target app --file Dockerfile --tag github.com/futurescopex/starter:app-${GITHUB_SHA} .
       - name: trivy scan
         uses: aquasecurity/trivy-action@master
         with:
-          image-ref: 'github.com/sebastianmacias/starter:app-${{ github.sha }}'
+          image-ref: 'github.com/futurescopex/starter:app-${{ github.sha }}'
           format: 'template'
           template: '@/contrib/sarif.tpl'
           output: 'trivy-results.sarif'
           severity: 'CRITICAL,HIGH'
           ignore-unfixed: true
       - name: docker run (target builder)
-        run: docker run -d --env-file $DOCKER_ENV_FILE --network "${{ job.services.postgres.network }}" --name=builder -it github.com/sebastianmacias/starter:builder-${GITHUB_SHA}
+        run: docker run -d --env-file $DOCKER_ENV_FILE --network "${{ job.services.postgres.network }}" --name=builder -it github.com/futurescopex/starter:builder-${GITHUB_SHA}
       - name: "build & diff"
         # Note builder stage now includes .git, thus we rm it again to again diff with the original git workspace
         run: |
@@ -65,7 +65,7 @@ jobs:
         env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}        
       - name: test-scripts (gsdev, starter only)
-        if: ${{ github.repository == 'sebastianmacias/starter' }} 
+        if: ${{ github.repository == 'futurescopex/starter' }} 
         run: docker exec builder make test-scripts
       - name: info
         run: docker exec builder make info
@@ -75,9 +75,9 @@ jobs:
         run: docker exec builder make get-licenses
       - name: docker run (target app)
         run: |
-          docker run --env-file $DOCKER_ENV_FILE --network "${{ job.services.postgres.network }}" github.com/sebastianmacias/starter:app-${GITHUB_SHA} help
-          docker run --env-file $DOCKER_ENV_FILE --network "${{ job.services.postgres.network }}" github.com/sebastianmacias/starter:app-${GITHUB_SHA} -v
-          docker run --env-file $DOCKER_ENV_FILE --network "${{ job.services.postgres.network }}" github.com/sebastianmacias/starter:app-${GITHUB_SHA} env
+          docker run --env-file $DOCKER_ENV_FILE --network "${{ job.services.postgres.network }}" github.com/futurescopex/starter:app-${GITHUB_SHA} help
+          docker run --env-file $DOCKER_ENV_FILE --network "${{ job.services.postgres.network }}" github.com/futurescopex/starter:app-${GITHUB_SHA} -v
+          docker run --env-file $DOCKER_ENV_FILE --network "${{ job.services.postgres.network }}" github.com/futurescopex/starter:app-${GITHUB_SHA} env
       - name: upload trivy scan results to GitHub security tab
         # Currently limited to main because of the following:
         # Workflows triggered by Dependabot on the "push" event run with read-only access. Uploading Code Scanning results requires write access.

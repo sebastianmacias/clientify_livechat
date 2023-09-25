@@ -4,7 +4,7 @@ import (
 	"math"
 	"testing"
 
-	"github.com/sebastianmacias/starter/internal/util"
+	"github.com/futurescopex/starter/internal/util"
 	"github.com/stretchr/testify/assert"
 )
 

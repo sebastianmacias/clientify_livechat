@@ -5,7 +5,7 @@ import (
 	"errors"
 	"net/http"
 
-	"github.com/sebastianmacias/starter/internal/push"
+	"github.com/futurescopex/starter/internal/push"
 	"google.golang.org/api/fcm/v1"
 	"google.golang.org/api/googleapi"
 	"google.golang.org/api/option"

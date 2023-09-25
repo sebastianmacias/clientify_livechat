@@ -6,7 +6,7 @@ produces:
 swagger: "2.0"
 info:
   description: API documentation
-  title: github.com/sebastianmacias/starter
+  title: github.com/futurescopex/starter
   version: 0.1.0
 paths:
   /-/healthy:

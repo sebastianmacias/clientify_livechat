@@ -7,7 +7,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/sebastianmacias/starter/scripts/internal/util"
+	"github.com/futurescopex/starter/scripts/internal/util"
 	"github.com/spf13/cobra"
 )
 

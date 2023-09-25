@@ -4,8 +4,8 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/sebastianmacias/starter/internal/api"
-	"github.com/sebastianmacias/starter/internal/test"
+	"github.com/futurescopex/starter/internal/api"
+	"github.com/futurescopex/starter/internal/test"
 	"github.com/stretchr/testify/require"
 )
 

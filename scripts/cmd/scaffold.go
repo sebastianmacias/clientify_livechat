@@ -7,7 +7,7 @@ import (
 	"os/exec"
 	"path/filepath"
 
-	"github.com/sebastianmacias/starter/scripts/internal/scaffold"
+	"github.com/futurescopex/starter/scripts/internal/scaffold"
 	"github.com/spf13/cobra"
 )
 

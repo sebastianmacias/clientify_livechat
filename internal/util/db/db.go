@@ -4,7 +4,7 @@ import (
 	"context"
 	"database/sql"
 
-	"github.com/sebastianmacias/starter/internal/util"
+	"github.com/futurescopex/starter/internal/util"
 	"github.com/volatiletech/null/v8"
 	"github.com/volatiletech/sqlboiler/v4/boil"
 )

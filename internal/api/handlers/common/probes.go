@@ -9,7 +9,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/sebastianmacias/starter/internal/util"
+	"github.com/futurescopex/starter/internal/util"
 	"golang.org/x/sys/unix"
 )
 

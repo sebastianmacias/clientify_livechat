@@ -342,7 +342,7 @@ GIT_STARTER_BASE ?= $(GIT_STARTER_TARGET:starter/%=%)
 
 git-fetch-starter: ##- (opt) Fetches upstream GIT_STARTER_TARGET (creating git remote 'starter').
 	@echo "GIT_STARTER_TARGET=${GIT_STARTER_TARGET} GIT_STARTER_BASE=${GIT_STARTER_BASE}"
-	@git config remote.starter.url >&- || git remote add starter https://github.com/sebastianmacias/starter.git
+	@git config remote.starter.url >&- || git remote add starter https://github.com/futurescopex/starter.git
 	@git fetch starter ${GIT_STARTER_BASE}
 
 git-compare-starter: ##- (opt) Compare upstream GIT_STARTER_TARGET to HEAD displaying commits away and git log.
@@ -390,8 +390,8 @@ set-module-name: ##- Wizard to set a new go module-name.
 		&& echo "new go module-name: '$${new_module_name}'!"
 	@rm -f tmp/.modulename
 
-force-module-name: ##- Overwrite occurrences of 'github.com/sebastianmacias/starter' with current go module-name.
-	find . -not -path '*/\.*' -not -path './Makefile' -type f -exec sed -i "s|github.com/sebastianmacias/starter|${GO_MODULE_NAME}|g" {} \;
+force-module-name: ##- Overwrite occurrences of 'github.com/futurescopex/starter' with current go module-name.
+	find . -not -path '*/\.*' -not -path './Makefile' -type f -exec sed -i "s|github.com/futurescopex/starter|${GO_MODULE_NAME}|g" {} \;
 
 get-go-ldflags: ##- (opt) Prints used -ldflags as evaluated in Makefile used in make go-build
 	@echo $(LDFLAGS)

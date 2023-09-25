@@ -3,9 +3,9 @@ package test
 import (
 	"testing"
 
-	"github.com/sebastianmacias/starter/internal/config"
-	"github.com/sebastianmacias/starter/internal/mailer"
-	"github.com/sebastianmacias/starter/internal/mailer/transport"
+	"github.com/futurescopex/starter/internal/config"
+	"github.com/futurescopex/starter/internal/mailer"
+	"github.com/futurescopex/starter/internal/mailer/transport"
 )
 
 const (

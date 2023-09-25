@@ -8,12 +8,12 @@ import (
 
 	"github.com/labstack/echo/v4"
 	"github.com/rs/zerolog/log"
-	"github.com/sebastianmacias/starter/internal/config"
-	"github.com/sebastianmacias/starter/internal/i18n"
-	"github.com/sebastianmacias/starter/internal/mailer"
-	"github.com/sebastianmacias/starter/internal/mailer/transport"
-	"github.com/sebastianmacias/starter/internal/push"
-	"github.com/sebastianmacias/starter/internal/push/provider"
+	"github.com/futurescopex/starter/internal/config"
+	"github.com/futurescopex/starter/internal/i18n"
+	"github.com/futurescopex/starter/internal/mailer"
+	"github.com/futurescopex/starter/internal/mailer/transport"
+	"github.com/futurescopex/starter/internal/push"
+	"github.com/futurescopex/starter/internal/push/provider"
 
 	// Import postgres driver for database/sql package
 	_ "github.com/lib/pq"

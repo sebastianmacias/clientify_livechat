@@ -6,7 +6,7 @@ import (
 	"strings"
 
 	"github.com/go-openapi/swag"
-	"github.com/sebastianmacias/starter/internal/types"
+	"github.com/futurescopex/starter/internal/types"
 )
 
 const (

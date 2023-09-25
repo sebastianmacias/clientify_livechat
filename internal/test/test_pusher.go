@@ -4,8 +4,8 @@ import (
 	"database/sql"
 	"testing"
 
-	"github.com/sebastianmacias/starter/internal/push"
-	"github.com/sebastianmacias/starter/internal/push/provider"
+	"github.com/futurescopex/starter/internal/push"
+	"github.com/futurescopex/starter/internal/push/provider"
 )
 
 func WithTestPusher(t *testing.T, closure func(p *push.Service, db *sql.DB)) {

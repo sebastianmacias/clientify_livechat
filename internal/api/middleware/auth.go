@@ -11,11 +11,11 @@ import (
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
 	"github.com/rs/zerolog/log"
-	"github.com/sebastianmacias/starter/internal/api"
-	"github.com/sebastianmacias/starter/internal/api/auth"
-	"github.com/sebastianmacias/starter/internal/api/httperrors"
-	"github.com/sebastianmacias/starter/internal/models"
-	"github.com/sebastianmacias/starter/internal/util"
+	"github.com/futurescopex/starter/internal/api"
+	"github.com/futurescopex/starter/internal/api/auth"
+	"github.com/futurescopex/starter/internal/api/httperrors"
+	"github.com/futurescopex/starter/internal/models"
+	"github.com/futurescopex/starter/internal/util"
 	"github.com/volatiletech/sqlboiler/v4/queries/qm"
 )
 

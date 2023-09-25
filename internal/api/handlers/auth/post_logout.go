@@ -6,12 +6,12 @@ import (
 	"net/http"
 
 	"github.com/labstack/echo/v4"
-	"github.com/sebastianmacias/starter/internal/api"
-	"github.com/sebastianmacias/starter/internal/api/auth"
-	"github.com/sebastianmacias/starter/internal/models"
-	"github.com/sebastianmacias/starter/internal/types"
-	"github.com/sebastianmacias/starter/internal/util"
-	"github.com/sebastianmacias/starter/internal/util/db"
+	"github.com/futurescopex/starter/internal/api"
+	"github.com/futurescopex/starter/internal/api/auth"
+	"github.com/futurescopex/starter/internal/models"
+	"github.com/futurescopex/starter/internal/types"
+	"github.com/futurescopex/starter/internal/util"
+	"github.com/futurescopex/starter/internal/util/db"
 	"github.com/volatiletech/sqlboiler/v4/boil"
 )
 

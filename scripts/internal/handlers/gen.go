@@ -20,7 +20,7 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/sebastianmacias/starter/scripts/internal/util"
+	"github.com/futurescopex/starter/scripts/internal/util"
 )
 
 // https://blog.carlmjohnson.net/post/2016-11-27-how-to-use-go-generate/
@@ -45,7 +45,7 @@ var (
 package handlers
 
 import (
-	"github.com/sebastianmacias/starter/internal/api"
+	"github.com/futurescopex/starter/internal/api"
 	{{- range .SubPkgs }}
 	"{{ . }}"
 	{{- end }}

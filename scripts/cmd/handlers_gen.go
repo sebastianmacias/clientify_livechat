@@ -5,7 +5,7 @@ package cmd
 import (
 	"log"
 
-	"github.com/sebastianmacias/starter/scripts/internal/handlers"
+	"github.com/futurescopex/starter/scripts/internal/handlers"
 	"github.com/spf13/cobra"
 )
 

@@ -1,6 +1,6 @@
 package hashing
 
-import "github.com/sebastianmacias/starter/internal/util"
+import "github.com/futurescopex/starter/internal/util"
 
 var (
 	// DefaultArgon2Params represents Argon2ID parameter recommendations in accordance with:

@@ -10,8 +10,8 @@ import (
 
 	"github.com/go-openapi/strfmt"
 	"github.com/go-openapi/strfmt/conv"
-	"github.com/sebastianmacias/starter/internal/test"
-	"github.com/sebastianmacias/starter/internal/util"
+	"github.com/futurescopex/starter/internal/test"
+	"github.com/futurescopex/starter/internal/util"
 	"github.com/stretchr/testify/require"
 )
 

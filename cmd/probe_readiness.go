@@ -6,8 +6,8 @@ import (
 	"fmt"
 
 	"github.com/rs/zerolog/log"
-	"github.com/sebastianmacias/starter/internal/api/handlers/common"
-	"github.com/sebastianmacias/starter/internal/config"
+	"github.com/futurescopex/starter/internal/api/handlers/common"
+	"github.com/futurescopex/starter/internal/config"
 	"github.com/spf13/cobra"
 )
 

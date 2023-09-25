@@ -6,8 +6,8 @@ import (
 	"testing"
 
 	"github.com/go-openapi/swag"
-	"github.com/sebastianmacias/starter/internal/api/httperrors"
-	"github.com/sebastianmacias/starter/internal/types"
+	"github.com/futurescopex/starter/internal/api/httperrors"
+	"github.com/futurescopex/starter/internal/types"
 	"github.com/stretchr/testify/require"
 )
 

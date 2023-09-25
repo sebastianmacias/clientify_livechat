@@ -10,9 +10,9 @@ import (
 
 	"github.com/jordan-wright/email"
 	"github.com/rs/zerolog/log"
-	"github.com/sebastianmacias/starter/internal/config"
-	"github.com/sebastianmacias/starter/internal/mailer/transport"
-	"github.com/sebastianmacias/starter/internal/util"
+	"github.com/futurescopex/starter/internal/config"
+	"github.com/futurescopex/starter/internal/mailer/transport"
+	"github.com/futurescopex/starter/internal/util"
 )
 
 var (

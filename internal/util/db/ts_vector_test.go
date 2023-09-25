@@ -4,7 +4,7 @@ import (
 	"testing"
 
 	"github.com/go-openapi/swag"
-	"github.com/sebastianmacias/starter/internal/util/db"
+	"github.com/futurescopex/starter/internal/util/db"
 	"github.com/stretchr/testify/assert"
 )
 

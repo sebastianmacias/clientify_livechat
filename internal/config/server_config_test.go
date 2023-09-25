@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/sebastianmacias/starter/internal/config"
+	"github.com/futurescopex/starter/internal/config"
 )
 
 func TestPrintServiceEnv(t *testing.T) {

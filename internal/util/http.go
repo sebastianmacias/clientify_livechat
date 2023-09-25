@@ -15,8 +15,8 @@ import (
 	"github.com/go-openapi/strfmt"
 	"github.com/go-openapi/swag"
 	"github.com/labstack/echo/v4"
-	"github.com/sebastianmacias/starter/internal/api/httperrors"
-	"github.com/sebastianmacias/starter/internal/types"
+	"github.com/futurescopex/starter/internal/api/httperrors"
+	"github.com/futurescopex/starter/internal/types"
 )
 
 const (

@@ -6,10 +6,10 @@ import (
 	"testing"
 
 	"github.com/go-openapi/strfmt"
-	"github.com/sebastianmacias/starter/internal/api"
-	"github.com/sebastianmacias/starter/internal/models"
-	"github.com/sebastianmacias/starter/internal/test"
-	"github.com/sebastianmacias/starter/internal/types"
+	"github.com/futurescopex/starter/internal/api"
+	"github.com/futurescopex/starter/internal/models"
+	"github.com/futurescopex/starter/internal/test"
+	"github.com/futurescopex/starter/internal/types"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

@@ -16,9 +16,9 @@ import (
 	"github.com/allaboutapps/integresql-client-go/pkg/util"
 	"github.com/pkg/errors"
 	migrate "github.com/rubenv/sql-migrate"
-	"github.com/sebastianmacias/starter/internal/config"
-	pUtil "github.com/sebastianmacias/starter/internal/util"
-	dbutil "github.com/sebastianmacias/starter/internal/util/db"
+	"github.com/futurescopex/starter/internal/config"
+	pUtil "github.com/futurescopex/starter/internal/util"
+	dbutil "github.com/futurescopex/starter/internal/util/db"
 	"github.com/volatiletech/sqlboiler/v4/boil"
 )
 

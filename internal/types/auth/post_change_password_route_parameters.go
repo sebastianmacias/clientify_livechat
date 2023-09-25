@@ -13,7 +13,7 @@ import (
 	"github.com/go-openapi/runtime/middleware"
 	"github.com/go-openapi/strfmt"
 
-	"github.com/sebastianmacias/starter/internal/types"
+	"github.com/futurescopex/starter/internal/types"
 )
 
 // NewPostChangePasswordRouteParams creates a new PostChangePasswordRouteParams object

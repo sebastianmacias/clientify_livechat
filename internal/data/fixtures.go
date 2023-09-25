@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/sebastianmacias/starter/internal/util"
+	"github.com/futurescopex/starter/internal/util"
 	"github.com/volatiletech/sqlboiler/v4/boil"
 )
 

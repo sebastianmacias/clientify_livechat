@@ -8,9 +8,9 @@ import (
 
 	"github.com/rs/zerolog"
 
-	"github.com/sebastianmacias/starter/internal/mailer/transport"
-	"github.com/sebastianmacias/starter/internal/push/provider"
-	"github.com/sebastianmacias/starter/internal/util"
+	"github.com/futurescopex/starter/internal/mailer/transport"
+	"github.com/futurescopex/starter/internal/push/provider"
+	"github.com/futurescopex/starter/internal/util"
 
 	"golang.org/x/text/language"
 )

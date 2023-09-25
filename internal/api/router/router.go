@@ -8,9 +8,9 @@ import (
 	"github.com/labstack/echo/v4"
 	echoMiddleware "github.com/labstack/echo/v4/middleware"
 	"github.com/rs/zerolog/log"
-	"github.com/sebastianmacias/starter/internal/api"
-	"github.com/sebastianmacias/starter/internal/api/handlers"
-	"github.com/sebastianmacias/starter/internal/api/middleware"
+	"github.com/futurescopex/starter/internal/api"
+	"github.com/futurescopex/starter/internal/api/handlers"
+	"github.com/futurescopex/starter/internal/api/middleware"
 
 	// #nosec G108 - pprof handlers (conditionally made available via http.DefaultServeMux)
 	"net/http/pprof"

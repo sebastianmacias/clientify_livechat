@@ -7,9 +7,9 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/sebastianmacias/starter/internal/test"
-	"github.com/sebastianmacias/starter/internal/util"
-	"github.com/sebastianmacias/starter/scripts/internal/scaffold"
+	"github.com/futurescopex/starter/internal/test"
+	"github.com/futurescopex/starter/internal/util"
+	"github.com/futurescopex/starter/scripts/internal/scaffold"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

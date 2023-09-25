@@ -1,4 +1,4 @@
-module github.com/sebastianmacias/starter
+module github.com/futurescopex/starter
 
 go 1.20
 

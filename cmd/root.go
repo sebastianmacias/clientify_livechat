@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/sebastianmacias/starter/internal/config"
+	"github.com/futurescopex/starter/internal/config"
 	"github.com/spf13/cobra"
 )
 

@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/sebastianmacias/starter/internal/types"
+	"github.com/futurescopex/starter/internal/types"
 	"github.com/volatiletech/sqlboiler/v4/queries/qm"
 )
 

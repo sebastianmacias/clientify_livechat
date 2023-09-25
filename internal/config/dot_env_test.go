@@ -5,8 +5,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/sebastianmacias/starter/internal/config"
-	"github.com/sebastianmacias/starter/internal/util"
+	"github.com/futurescopex/starter/internal/config"
+	"github.com/futurescopex/starter/internal/util"
 	"github.com/stretchr/testify/assert"
 )
 

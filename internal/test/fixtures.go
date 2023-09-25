@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/sebastianmacias/starter/internal/models"
-	"github.com/sebastianmacias/starter/internal/util"
+	"github.com/futurescopex/starter/internal/models"
+	"github.com/futurescopex/starter/internal/util"
 	"github.com/volatiletech/null/v8"
 	"github.com/volatiletech/sqlboiler/v4/boil"
 )

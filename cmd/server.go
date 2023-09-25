@@ -12,9 +12,9 @@ import (
 
 	"github.com/rs/zerolog"
 	"github.com/rs/zerolog/log"
-	"github.com/sebastianmacias/starter/internal/api"
-	"github.com/sebastianmacias/starter/internal/api/router"
-	"github.com/sebastianmacias/starter/internal/config"
+	"github.com/futurescopex/starter/internal/api"
+	"github.com/futurescopex/starter/internal/api/router"
+	"github.com/futurescopex/starter/internal/config"
 	"github.com/spf13/cobra"
 )
 

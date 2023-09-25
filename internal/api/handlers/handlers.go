@@ -3,10 +3,10 @@ package handlers
 
 import (
 	"github.com/labstack/echo/v4"
-	"github.com/sebastianmacias/starter/internal/api"
-	"github.com/sebastianmacias/starter/internal/api/handlers/auth"
-	"github.com/sebastianmacias/starter/internal/api/handlers/common"
-	"github.com/sebastianmacias/starter/internal/api/handlers/push"
+	"github.com/futurescopex/starter/internal/api"
+	"github.com/futurescopex/starter/internal/api/handlers/auth"
+	"github.com/futurescopex/starter/internal/api/handlers/common"
+	"github.com/futurescopex/starter/internal/api/handlers/push"
 )
 
 func AttachAllRoutes(s *api.Server) {

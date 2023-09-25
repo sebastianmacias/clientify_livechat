@@ -4,8 +4,8 @@ import (
 	"path/filepath"
 
 	"github.com/labstack/echo/v4"
-	"github.com/sebastianmacias/starter/internal/api"
-	"github.com/sebastianmacias/starter/internal/api/middleware"
+	"github.com/futurescopex/starter/internal/api"
+	"github.com/futurescopex/starter/internal/api/middleware"
 )
 
 func GetSwaggerRoute(s *api.Server) *echo.Route {
