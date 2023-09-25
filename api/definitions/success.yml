@@ -26,7 +26,7 @@ definitions:
       title:
         description: "Short, human-readable description of the success"
         type: string
-        example: Forbidden
+        example: Success
       type:
         description: "Type of success returned, should be used for client-side success handling"
         type: string
