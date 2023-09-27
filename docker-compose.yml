@@ -83,7 +83,7 @@ services:
         git config --global --add safe.directory /app
         while sleep 1000; do :; done
     networks: 
-      - multitenancy-network    
+      - starter-network     
       
   postgres:
     image: postgres:15.4-alpine3.18 # should be the same version as used in .drone.yml, .github/workflows, Dockerfile and live
@@ -107,7 +107,7 @@ services:
     volumes:
       - pgvolume:/var/lib/postgresql/data
     networks: 
-      - multitenancy-network          
+      - starter-network           
 
   integresql:
     image: allaboutapps/integresql:1.0.0
@@ -120,7 +120,7 @@ services:
       PGUSER: *PGUSER
       PGPASSWORD: *PGPASSWORD
     networks: 
-      - multitenancy-network          
+      - starter-network           
 
   mailhog:
     image: mailhog/mailhog
@@ -129,7 +129,7 @@ services:
     ports:
       - "8025:8025"
     networks: 
-      - multitenancy-network          
+      - starter-network           
 
   swaggerui:
     image: swaggerapi/swagger-ui:v3.46.0
@@ -141,7 +141,7 @@ services:
       # mount overwritten translator.js (intercept requests port 8081 to our local service on port 8080)
       - ./api/config/swagger-ui-local-translator.js:/usr/share/nginx/configurator/translator.js:ro,delegated
     networks: 
-      - multitenancy-network    
+      - starter-network     
 
   swaggerui-browser-sync:
     image: allaboutapps/browser-sync:v2.26.14
@@ -151,7 +151,7 @@ services:
     ports:
       - "8081:8081"
     networks: 
-      - multitenancy-network 
+      - starter-network  
          
 volumes:
   # postgresql: declare a named volume to persist DB data
@@ -171,5 +171,5 @@ volumes:
   vscode-extensions-insiders:
 
 networks:
-  multitenancy-network:
+  starter-network :
     external: true
