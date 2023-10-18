@@ -1,0 +1,102 @@
+name: Build & Test
+
+on:
+  push:
+    branches: "**"
+  # pull_request:
+  #   branches: [master]
+  #   types: [opened, reopened] # avoid running twice (on push above), see https://github.com/open-telemetry/opentelemetry-python/issues/1370
+env:
+  DOCKER_ENV_FILE: ".github/workflows/docker.env"
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:15.4-alpine3.18 # should be the same version as used in .drone.yml, .github/workflows, Dockerfile and live
+        env:
+          POSTGRES_DB: "development"
+          POSTGRES_USER: "dbuser"
+          POSTGRES_PASSWORD: "dbpass"
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+        ports:
+          - 5432:5432
+      integresql:
+        image: allaboutapps/integresql:latest
+        env:
+          PGHOST: "postgres"
+          PGUSER: "dbuser"
+          PGPASSWORD: "dbpass"
+      mailhog:
+        image: mailhog/mailhog
+    steps:
+      - uses: actions/checkout@v4.1.1
+      - name: docker build (target builder)
+        run: DOCKER_BUILDKIT=1 docker build --target builder --file Dockerfile --tag github.com/futurescopex/starter:builder-${GITHUB_SHA} .
+      - name: docker build (target app)
+        run: DOCKER_BUILDKIT=1 docker build --target app --file Dockerfile --tag github.com/futurescopex/starter:app-${GITHUB_SHA} .
+      - name: trivy scan
+        uses: aquasecurity/trivy-action@master
+        with:
+          image-ref: 'github.com/futurescopex/starter:app-${{ github.sha }}'
+          format: 'template'
+          template: '@/contrib/sarif.tpl'
+          output: 'trivy-results.sarif'
+          severity: 'CRITICAL,HIGH'
+          ignore-unfixed: true
+      - name: docker run (target builder)
+        run: docker run -d --env-file $DOCKER_ENV_FILE --network "${{ job.services.postgres.network }}" --name=builder -it github.com/futurescopex/starter:builder-${GITHUB_SHA}
+      - name: "build & diff"
+        # Note builder stage now includes .git, thus we rm it again to again diff with the original git workspace
+        run: |
+          docker exec builder make tidy
+          docker exec builder make build
+          docker cp builder:/app ./post-build && rm -rf ./post-build/.git && git -C post-build diff --exit-code
+      - name: test
+        run: docker exec builder make test
+      - name: copy coverage.out
+        run: docker cp builder:/tmp/coverage.out ./coverage.out
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v3
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}        
+      - name: test-scripts (gsdev, starter only)
+        if: ${{ github.repository == 'futurescopex/starter' }} 
+        run: docker exec builder make test-scripts
+      - name: info
+        run: docker exec builder make info
+      - name: "binary: deps"
+        run: docker exec builder bash -c 'make get-embedded-modules-count && make get-embedded-modules'
+      - name: "binary: licenses"
+        run: docker exec builder make get-licenses
+      - name: docker run (target app)
+        run: |
+          docker run --env-file $DOCKER_ENV_FILE --network "${{ job.services.postgres.network }}" github.com/futurescopex/starter:app-${GITHUB_SHA} help
+          docker run --env-file $DOCKER_ENV_FILE --network "${{ job.services.postgres.network }}" github.com/futurescopex/starter:app-${GITHUB_SHA} -v
+          docker run --env-file $DOCKER_ENV_FILE --network "${{ job.services.postgres.network }}" github.com/futurescopex/starter:app-${GITHUB_SHA} env
+      - name: upload trivy scan results to GitHub security tab
+        # Currently limited to main because of the following:
+        # Workflows triggered by Dependabot on the "push" event run with read-only access. Uploading Code Scanning results requires write access.
+        # To use Code Scanning with Dependabot, please ensure you are using the "pull_request" event for this workflow and avoid triggering on the "push" event for Dependabot branches.
+        # See https://docs.github.com/en/code-security/secure-coding/configuring-code-scanning#scanning-on-push for more information on how to configure these events.
+        if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/master' }} 
+        uses: github/codeql-action/upload-sarif@v2
+        with:
+          sarif_file: 'trivy-results.sarif'
+      - name: stop container
+        if: ${{ always() }}
+        run: docker stop builder
+      - name: remove container
+        if: ${{ always() }}
+        run: docker rm builder
+  swagger-codegen-cli:
+    runs-on: ubuntu-latest
+    container: swaggerapi/swagger-codegen-cli
+    steps:
+      - uses: actions/checkout@v4.1.1
+      - name: run the main swagger.yml validation
+        run: java -jar /opt/swagger-codegen-cli/swagger-codegen-cli.jar validate -i ./api/swagger.yml
