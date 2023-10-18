@@ -8,12 +8,12 @@ import (
 	"path"
 	"time"
 
-	"github.com/futurescopex/starter/internal/api"
-	"github.com/futurescopex/starter/internal/models"
-	"github.com/futurescopex/starter/internal/types"
-	"github.com/futurescopex/starter/internal/util"
-	"github.com/futurescopex/starter/internal/util/db"
 	"github.com/labstack/echo/v4"
+	"github.com/sebastianmacias/clientify_livechat/internal/api"
+	"github.com/sebastianmacias/clientify_livechat/internal/models"
+	"github.com/sebastianmacias/clientify_livechat/internal/types"
+	"github.com/sebastianmacias/clientify_livechat/internal/util"
+	"github.com/sebastianmacias/clientify_livechat/internal/util/db"
 	"github.com/volatiletech/null/v8"
 	"github.com/volatiletech/sqlboiler/v4/boil"
 )

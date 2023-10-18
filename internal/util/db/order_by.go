@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/futurescopex/starter/internal/types"
+	"github.com/sebastianmacias/clientify_livechat/internal/types"
 	"github.com/volatiletech/sqlboiler/v4/queries/qm"
 )
 

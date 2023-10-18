@@ -14,10 +14,10 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/futurescopex/starter/internal/api"
-	"github.com/futurescopex/starter/internal/api/router"
-	"github.com/futurescopex/starter/internal/config"
-	"github.com/futurescopex/starter/internal/types"
+	"github.com/sebastianmacias/clientify_livechat/internal/api"
+	"github.com/sebastianmacias/clientify_livechat/internal/api/router"
+	"github.com/sebastianmacias/clientify_livechat/internal/config"
+	"github.com/sebastianmacias/clientify_livechat/internal/types"
 	"github.com/rs/zerolog"
 )
 

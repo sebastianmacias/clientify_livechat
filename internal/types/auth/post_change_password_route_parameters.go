@@ -13,7 +13,7 @@ import (
 	"github.com/go-openapi/runtime/middleware"
 	"github.com/go-openapi/strfmt"
 
-	"github.com/futurescopex/starter/internal/types"
+	"github.com/sebastianmacias/clientify_livechat/internal/types"
 )
 
 // NewPostChangePasswordRouteParams creates a new PostChangePasswordRouteParams object

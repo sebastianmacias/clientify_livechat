@@ -8,9 +8,9 @@ import (
 
 	"github.com/rs/zerolog"
 
-	"github.com/futurescopex/starter/internal/mailer/transport"
-	"github.com/futurescopex/starter/internal/push/provider"
-	"github.com/futurescopex/starter/internal/util"
+	"github.com/sebastianmacias/clientify_livechat/internal/mailer/transport"
+	"github.com/sebastianmacias/clientify_livechat/internal/push/provider"
+	"github.com/sebastianmacias/clientify_livechat/internal/util"
 
 	"golang.org/x/text/language"
 )

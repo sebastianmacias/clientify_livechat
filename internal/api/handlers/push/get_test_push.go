@@ -3,10 +3,10 @@ package push
 import (
 	"net/http"
 
-	"github.com/futurescopex/starter/internal/api"
-	"github.com/futurescopex/starter/internal/api/auth"
-	"github.com/futurescopex/starter/internal/util"
 	"github.com/labstack/echo/v4"
+	"github.com/sebastianmacias/clientify_livechat/internal/api"
+	"github.com/sebastianmacias/clientify_livechat/internal/api/auth"
+	"github.com/sebastianmacias/clientify_livechat/internal/util"
 )
 
 func GetPushTestRoute(s *api.Server) *echo.Route {

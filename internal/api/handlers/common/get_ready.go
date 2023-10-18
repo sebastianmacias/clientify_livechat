@@ -4,8 +4,8 @@ import (
 	"context"
 	"net/http"
 
-	"github.com/futurescopex/starter/internal/api"
 	"github.com/labstack/echo/v4"
+	"github.com/sebastianmacias/clientify_livechat/internal/api"
 )
 
 func GetReadyRoute(s *api.Server) *echo.Route {

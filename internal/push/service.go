@@ -5,8 +5,8 @@ import (
 	"database/sql"
 	"errors"
 
-	"github.com/futurescopex/starter/internal/models"
-	"github.com/futurescopex/starter/internal/util"
+	"github.com/sebastianmacias/clientify_livechat/internal/models"
+	"github.com/sebastianmacias/clientify_livechat/internal/util"
 )
 
 type ProviderType string

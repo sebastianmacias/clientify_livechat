@@ -3,9 +3,9 @@ package db_test
 import (
 	"testing"
 
-	"github.com/futurescopex/starter/internal/models"
-	"github.com/futurescopex/starter/internal/test"
-	"github.com/futurescopex/starter/internal/util/db"
+	"github.com/sebastianmacias/clientify_livechat/internal/models"
+	"github.com/sebastianmacias/clientify_livechat/internal/test"
+	"github.com/sebastianmacias/clientify_livechat/internal/util/db"
 	"github.com/stretchr/testify/require"
 	"github.com/volatiletech/sqlboiler/v4/queries"
 	"github.com/volatiletech/sqlboiler/v4/queries/qm"

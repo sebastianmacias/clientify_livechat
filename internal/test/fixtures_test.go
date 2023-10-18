@@ -5,9 +5,9 @@ import (
 	"database/sql"
 	"testing"
 
-	"github.com/futurescopex/starter/internal/models"
-	"github.com/futurescopex/starter/internal/test"
 	_ "github.com/lib/pq"
+	"github.com/sebastianmacias/clientify_livechat/internal/models"
+	"github.com/sebastianmacias/clientify_livechat/internal/test"
 	"github.com/volatiletech/null/v8"
 	"github.com/volatiletech/sqlboiler/v4/boil"
 )

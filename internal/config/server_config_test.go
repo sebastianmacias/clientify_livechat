@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/futurescopex/starter/internal/config"
+	"github.com/sebastianmacias/clientify_livechat/internal/config"
 )
 
 func TestPrintServiceEnv(t *testing.T) {

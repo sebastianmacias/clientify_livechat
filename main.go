@@ -1,6 +1,6 @@
 package main
 
-import "github.com/futurescopex/starter/cmd"
+import "github.com/sebastianmacias/clientify_livechat/cmd"
 
 func main() {
 	cmd.Execute()

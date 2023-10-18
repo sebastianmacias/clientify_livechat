@@ -38,5 +38,5 @@ gsdev
 # Misses build tag "scripts"
 go run scripts/main.go
 # package command-line-arguments
-# 	imports github.com/futurescopex/starter/scripts/cmd: build constraints exclude all Go files in /app/scripts/cmd
+# 	imports github.com/sebastianmacias/clientify_livechat/scripts/cmd: build constraints exclude all Go files in /app/scripts/cmd
 ```

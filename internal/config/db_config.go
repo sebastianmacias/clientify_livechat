@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/futurescopex/starter/internal/util"
+	"github.com/sebastianmacias/clientify_livechat/internal/util"
 )
 
 // The DatabaseMigrationTable name is baked into the binary

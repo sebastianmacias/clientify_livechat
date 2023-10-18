@@ -3,9 +3,9 @@ package test
 import (
 	"testing"
 
-	"github.com/futurescopex/starter/internal/config"
-	"github.com/futurescopex/starter/internal/mailer"
-	"github.com/futurescopex/starter/internal/mailer/transport"
+	"github.com/sebastianmacias/clientify_livechat/internal/config"
+	"github.com/sebastianmacias/clientify_livechat/internal/mailer"
+	"github.com/sebastianmacias/clientify_livechat/internal/mailer/transport"
 )
 
 const (

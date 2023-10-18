@@ -6,10 +6,10 @@ import (
 	"regexp"
 	"testing"
 
-	"github.com/futurescopex/starter/internal/test"
-	"github.com/futurescopex/starter/internal/test/mocks"
-	"github.com/futurescopex/starter/internal/util"
 	"github.com/go-openapi/swag"
+	"github.com/sebastianmacias/clientify_livechat/internal/test"
+	"github.com/sebastianmacias/clientify_livechat/internal/test/mocks"
+	"github.com/sebastianmacias/clientify_livechat/internal/util"
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"
 )

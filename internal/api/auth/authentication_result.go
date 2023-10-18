@@ -3,7 +3,7 @@ package auth
 import (
 	"time"
 
-	"github.com/futurescopex/starter/internal/models"
+	"github.com/sebastianmacias/clientify_livechat/internal/models"
 )
 
 type AuthenticationResult struct {

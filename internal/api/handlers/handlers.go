@@ -2,11 +2,11 @@
 package handlers
 
 import (
-	"github.com/futurescopex/starter/internal/api"
-	"github.com/futurescopex/starter/internal/api/handlers/auth"
-	"github.com/futurescopex/starter/internal/api/handlers/common"
-	"github.com/futurescopex/starter/internal/api/handlers/push"
 	"github.com/labstack/echo/v4"
+	"github.com/sebastianmacias/clientify_livechat/internal/api"
+	"github.com/sebastianmacias/clientify_livechat/internal/api/handlers/auth"
+	"github.com/sebastianmacias/clientify_livechat/internal/api/handlers/common"
+	"github.com/sebastianmacias/clientify_livechat/internal/api/handlers/push"
 )
 
 func AttachAllRoutes(s *api.Server) {

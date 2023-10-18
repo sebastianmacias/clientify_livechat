@@ -2,7 +2,7 @@
 
 package main
 
-import "github.com/futurescopex/starter/scripts/cmd"
+import "github.com/sebastianmacias/clientify_livechat/scripts/cmd"
 
 func main() {
 	cmd.Execute()

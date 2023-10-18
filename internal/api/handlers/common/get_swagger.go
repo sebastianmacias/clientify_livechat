@@ -3,9 +3,9 @@ package common
 import (
 	"path/filepath"
 
-	"github.com/futurescopex/starter/internal/api"
-	"github.com/futurescopex/starter/internal/api/middleware"
 	"github.com/labstack/echo/v4"
+	"github.com/sebastianmacias/clientify_livechat/internal/api"
+	"github.com/sebastianmacias/clientify_livechat/internal/api/middleware"
 )
 
 func GetSwaggerRoute(s *api.Server) *echo.Route {

@@ -7,9 +7,9 @@ import (
 	"strings"
 
 	"github.com/BurntSushi/toml"
-	"github.com/futurescopex/starter/internal/config"
 	"github.com/nicksnyder/go-i18n/v2/i18n"
 	"github.com/rs/zerolog/log"
+	"github.com/sebastianmacias/clientify_livechat/internal/config"
 	"golang.org/x/text/language"
 )
 

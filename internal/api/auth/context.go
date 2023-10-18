@@ -3,10 +3,10 @@ package auth
 import (
 	"context"
 
-	"github.com/futurescopex/starter/internal/models"
-	"github.com/futurescopex/starter/internal/util"
 	"github.com/go-openapi/swag"
 	"github.com/labstack/echo/v4"
+	"github.com/sebastianmacias/clientify_livechat/internal/models"
+	"github.com/sebastianmacias/clientify_livechat/internal/util"
 )
 
 // EnrichContextWithCredentials stores the provided credentials in the form of user and access token used for authentication

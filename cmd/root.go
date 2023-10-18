@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/futurescopex/starter/internal/config"
+	"github.com/sebastianmacias/clientify_livechat/internal/config"
 	"github.com/spf13/cobra"
 )
 

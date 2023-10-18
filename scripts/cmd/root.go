@@ -7,7 +7,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/futurescopex/starter/scripts/internal/util"
+	"github.com/sebastianmacias/clientify_livechat/scripts/internal/util"
 	"github.com/spf13/cobra"
 )
 

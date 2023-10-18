@@ -11,11 +11,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/futurescopex/starter/internal/util"
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
 	"github.com/rs/zerolog"
 	"github.com/rs/zerolog/log"
+	"github.com/sebastianmacias/clientify_livechat/internal/util"
 )
 
 // RequestBodyLogSkipper defines a function to skip logging certain request bodies.

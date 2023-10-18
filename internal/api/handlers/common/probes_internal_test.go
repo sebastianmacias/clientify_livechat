@@ -8,7 +8,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/futurescopex/starter/internal/util"
+	"github.com/sebastianmacias/clientify_livechat/internal/util"
 	"github.com/stretchr/testify/assert"
 )
 

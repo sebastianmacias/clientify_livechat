@@ -3,7 +3,7 @@ package util_test
 import (
 	"testing"
 
-	"github.com/futurescopex/starter/internal/util"
+	"github.com/sebastianmacias/clientify_livechat/internal/util"
 	"github.com/stretchr/testify/require"
 )
 

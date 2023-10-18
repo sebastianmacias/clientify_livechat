@@ -3,8 +3,8 @@ package db_test
 import (
 	"testing"
 
-	"github.com/futurescopex/starter/internal/util/db"
 	"github.com/go-openapi/swag"
+	"github.com/sebastianmacias/clientify_livechat/internal/util/db"
 	"github.com/stretchr/testify/assert"
 )
 

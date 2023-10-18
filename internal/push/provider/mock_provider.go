@@ -3,8 +3,8 @@ package provider
 import (
 	"errors"
 
-	"github.com/futurescopex/starter/internal/push"
 	"github.com/rs/zerolog/log"
+	"github.com/sebastianmacias/clientify_livechat/internal/push"
 )
 
 type Mock struct {

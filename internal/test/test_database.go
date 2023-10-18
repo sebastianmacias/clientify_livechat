@@ -14,11 +14,11 @@ import (
 
 	"github.com/allaboutapps/integresql-client-go"
 	"github.com/allaboutapps/integresql-client-go/pkg/util"
-	"github.com/futurescopex/starter/internal/config"
-	pUtil "github.com/futurescopex/starter/internal/util"
-	dbutil "github.com/futurescopex/starter/internal/util/db"
 	"github.com/pkg/errors"
 	migrate "github.com/rubenv/sql-migrate"
+	"github.com/sebastianmacias/clientify_livechat/internal/config"
+	pUtil "github.com/sebastianmacias/clientify_livechat/internal/util"
+	dbutil "github.com/sebastianmacias/clientify_livechat/internal/util/db"
 	"github.com/volatiletech/sqlboiler/v4/boil"
 )
 

@@ -10,11 +10,11 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/futurescopex/starter/internal/api"
-	"github.com/futurescopex/starter/internal/api/router"
-	"github.com/futurescopex/starter/internal/config"
 	"github.com/rs/zerolog"
 	"github.com/rs/zerolog/log"
+	"github.com/sebastianmacias/clientify_livechat/internal/api"
+	"github.com/sebastianmacias/clientify_livechat/internal/api/router"
+	"github.com/sebastianmacias/clientify_livechat/internal/config"
 	"github.com/spf13/cobra"
 )
 

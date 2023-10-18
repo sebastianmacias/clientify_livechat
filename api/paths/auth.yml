@@ -1,6 +1,6 @@
 swagger: "2.0"
 info:
-  title: github.com/futurescopex/starter
+  title: github.com/sebastianmacias/clientify_livechat
   version: 0.1.0
 responses:
   InvalidPasswordResponse:

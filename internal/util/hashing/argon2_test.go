@@ -4,7 +4,7 @@ import (
 	"regexp"
 	"testing"
 
-	"github.com/futurescopex/starter/internal/util/hashing"
+	"github.com/sebastianmacias/clientify_livechat/internal/util/hashing"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 
-	// "github.com/futurescopex/starter/internal/workflows"
+	// "github.com/sebastianmacias/clientify_livechat/internal/workflows"
 
 	"github.com/spf13/cobra"
 	// "go.temporal.io/sdk/client"

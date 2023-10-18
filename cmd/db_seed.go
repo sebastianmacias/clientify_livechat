@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/futurescopex/starter/internal/config"
-	"github.com/futurescopex/starter/internal/data"
-	dbutil "github.com/futurescopex/starter/internal/util/db"
+	"github.com/sebastianmacias/clientify_livechat/internal/config"
+	"github.com/sebastianmacias/clientify_livechat/internal/data"
+	dbutil "github.com/sebastianmacias/clientify_livechat/internal/util/db"
 	"github.com/spf13/cobra"
 	"github.com/volatiletech/sqlboiler/v4/boil"
 )

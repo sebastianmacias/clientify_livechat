@@ -13,7 +13,7 @@ import (
 	"text/template"
 
 	"github.com/go-openapi/swag"
-	"github.com/futurescopex/starter/internal/util"
+	"github.com/sebastianmacias/clientify_livechat/internal/util"
 	"golang.org/x/mod/modfile"
 )
 

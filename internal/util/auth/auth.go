@@ -1,6 +1,6 @@
 package auth
 
-import "github.com/futurescopex/starter/internal/models"
+import "github.com/sebastianmacias/clientify_livechat/internal/models"
 
 // UserHasScopes checks if a User has all the required scopes.
 func UserHasScopes(user *models.User, requiredScopes []string) bool {

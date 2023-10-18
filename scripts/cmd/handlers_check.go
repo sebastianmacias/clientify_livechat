@@ -5,7 +5,7 @@ package cmd
 import (
 	"log"
 
-	"github.com/futurescopex/starter/scripts/internal/handlers"
+	"github.com/sebastianmacias/clientify_livechat/scripts/internal/handlers"
 	"github.com/spf13/cobra"
 )
 

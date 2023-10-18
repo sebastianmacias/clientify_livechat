@@ -7,8 +7,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/futurescopex/starter/internal/util"
 	"github.com/go-openapi/swag"
+	"github.com/sebastianmacias/clientify_livechat/internal/util"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -6,8 +6,8 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/futurescopex/starter/internal/api"
 	"github.com/labstack/echo/v4"
+	"github.com/sebastianmacias/clientify_livechat/internal/api"
 )
 
 func GetHealthyRoute(s *api.Server) *echo.Route {

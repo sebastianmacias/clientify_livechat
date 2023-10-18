@@ -3,7 +3,7 @@ package test_test
 import (
 	"testing"
 
-	"github.com/futurescopex/starter/internal/test"
+	"github.com/sebastianmacias/clientify_livechat/internal/test"
 	"github.com/stretchr/testify/assert"
 )
 

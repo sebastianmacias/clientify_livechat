@@ -9,7 +9,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/futurescopex/starter/internal/util"
+	"github.com/sebastianmacias/clientify_livechat/internal/util"
 	"golang.org/x/sys/unix"
 )
 

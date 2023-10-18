@@ -3,9 +3,9 @@ package common
 import (
 	"net/http"
 
-	"github.com/futurescopex/starter/internal/api"
-	"github.com/futurescopex/starter/internal/config"
 	"github.com/labstack/echo/v4"
+	"github.com/sebastianmacias/clientify_livechat/internal/api"
+	"github.com/sebastianmacias/clientify_livechat/internal/config"
 )
 
 func GetVersionRoute(s *api.Server) *echo.Route {

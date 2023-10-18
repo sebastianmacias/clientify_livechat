@@ -5,7 +5,7 @@ import (
 	"errors"
 	"net/http"
 
-	"github.com/futurescopex/starter/internal/push"
+	"github.com/sebastianmacias/clientify_livechat/internal/push"
 	"google.golang.org/api/fcm/v1"
 	"google.golang.org/api/googleapi"
 	"google.golang.org/api/option"

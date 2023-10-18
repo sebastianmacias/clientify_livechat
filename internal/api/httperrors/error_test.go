@@ -5,9 +5,9 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/futurescopex/starter/internal/api/httperrors"
-	"github.com/futurescopex/starter/internal/types"
 	"github.com/go-openapi/swag"
+	"github.com/sebastianmacias/clientify_livechat/internal/api/httperrors"
+	"github.com/sebastianmacias/clientify_livechat/internal/types"
 	"github.com/stretchr/testify/require"
 )
 

@@ -2,7 +2,7 @@
 
 **go-starter** is an opinionated *production-ready* RESTful JSON backend template written in [Go](https://golang.org/), highly integrated with [VSCode DevContainers](https://code.visualstudio.com/docs/remote/containers) by [allaboutapps](https://allaboutapps.at/).
 
-[![Build and Test](https://github.com/futurescopex/starter/actions/workflows/build-test.yml/badge.svg)](https://github.com/futurescopex/starter/actions)
+[![Build and Test](https://github.com/sebastianmacias/clientify_livechat/actions/workflows/build-test.yml/badge.svg)](https://github.com/sebastianmacias/clientify_livechat/actions)
 [![codecov](https://codecov.io/gh/futurescopex/starter/graph/badge.svg?token=8J7DLNJN0Y)](https://codecov.io/gh/futurescopex/starter)
 [![Go Report Card](https://goreportcard.com/badge/github.com/allaboutapps/go-starter)](https://goreportcard.com/report/github.com/allaboutapps/go-starter)
 [![Swagger Validator](https://img.shields.io/swagger/valid/3.0?specUrl=https%3A%2F%2Fraw.githubusercontent.com%2Fallaboutapps%2Fgo-starter%2Fmaster%2Fapi%2Fswagger.yml)](https://go-starter.allaboutapps.at/documentation/)

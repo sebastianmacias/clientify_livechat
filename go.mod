@@ -1,4 +1,4 @@
-module github.com/futurescopex/starter
+module github.com/sebastianmacias/clientify_livechat
 
 go 1.21.3
 

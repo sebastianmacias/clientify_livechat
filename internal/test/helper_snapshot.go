@@ -9,8 +9,8 @@ import (
 	"strings"
 
 	"github.com/davecgh/go-spew/spew"
-	"github.com/futurescopex/starter/internal/util"
 	"github.com/pmezard/go-difflib/difflib"
+	"github.com/sebastianmacias/clientify_livechat/internal/util"
 )
 
 var (

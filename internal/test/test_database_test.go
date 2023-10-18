@@ -9,9 +9,9 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/futurescopex/starter/internal/config"
-	"github.com/futurescopex/starter/internal/test"
-	pUtil "github.com/futurescopex/starter/internal/util"
+	"github.com/sebastianmacias/clientify_livechat/internal/config"
+	"github.com/sebastianmacias/clientify_livechat/internal/test"
+	pUtil "github.com/sebastianmacias/clientify_livechat/internal/util"
 	"github.com/stretchr/testify/require"
 )
 

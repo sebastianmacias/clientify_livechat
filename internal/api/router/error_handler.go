@@ -6,11 +6,11 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/futurescopex/starter/internal/api/httperrors"
-	"github.com/futurescopex/starter/internal/types"
-	"github.com/futurescopex/starter/internal/util"
 	"github.com/go-openapi/swag"
 	"github.com/labstack/echo/v4"
+	"github.com/sebastianmacias/clientify_livechat/internal/api/httperrors"
+	"github.com/sebastianmacias/clientify_livechat/internal/types"
+	"github.com/sebastianmacias/clientify_livechat/internal/util"
 )
 
 var (

@@ -5,11 +5,11 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/futurescopex/starter/internal/api"
-	"github.com/futurescopex/starter/internal/models"
-	"github.com/futurescopex/starter/internal/test"
-	"github.com/futurescopex/starter/internal/types"
 	"github.com/go-openapi/strfmt"
+	"github.com/sebastianmacias/clientify_livechat/internal/api"
+	"github.com/sebastianmacias/clientify_livechat/internal/models"
+	"github.com/sebastianmacias/clientify_livechat/internal/test"
+	"github.com/sebastianmacias/clientify_livechat/internal/types"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

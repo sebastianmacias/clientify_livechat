@@ -8,11 +8,11 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/futurescopex/starter/internal/config"
-	"github.com/futurescopex/starter/internal/mailer/transport"
-	"github.com/futurescopex/starter/internal/util"
 	"github.com/jordan-wright/email"
 	"github.com/rs/zerolog/log"
+	"github.com/sebastianmacias/clientify_livechat/internal/config"
+	"github.com/sebastianmacias/clientify_livechat/internal/mailer/transport"
+	"github.com/sebastianmacias/clientify_livechat/internal/util"
 )
 
 var (

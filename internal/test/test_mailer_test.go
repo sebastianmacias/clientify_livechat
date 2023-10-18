@@ -4,8 +4,8 @@ import (
 	"context"
 	"testing"
 
-	"github.com/futurescopex/starter/internal/mailer/transport"
-	"github.com/futurescopex/starter/internal/test"
+	"github.com/sebastianmacias/clientify_livechat/internal/mailer/transport"
+	"github.com/sebastianmacias/clientify_livechat/internal/test"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )
