@@ -34,7 +34,7 @@ require (
 	go.temporal.io/sdk v1.25.1
 	golang.org/x/crypto v0.14.0
 	golang.org/x/mod v0.13.0
-	golang.org/x/sys v0.13.0
+	golang.org/x/sys v0.15.0
 	golang.org/x/text v0.13.0
 	google.golang.org/api v0.147.0
 )
